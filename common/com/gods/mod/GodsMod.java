@@ -1,4 +1,4 @@
-package com.gods.mod;
+ackage com.gods.mod;
 
 
 import net.minecraft.block.Block;
