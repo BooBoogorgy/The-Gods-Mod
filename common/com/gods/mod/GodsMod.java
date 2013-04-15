@@ -28,6 +28,7 @@ public class GodsMod
 	public static Block WhiteDirt = new GodDirt(1001, 0, "WhiteGrass_Bottom").setUnlocalizedName("WhiteDirt").setHardness(2.0F).setStepSound(Block.soundGrassFootstep);
     public static Block CrackedMossyStone = new CrackedMossy(1002, Material.rock).setUnlocalizedName("CrackedMossyStone").setHardness(10.0F).setStepSound(Block.soundStoneFootstep);
     public static Block ZeusBlock = new ZeusBlock(1003, Material.rock).setUnlocalizedName("ZeusBlock").setHardness(10.0F);
+    public static Block StonePiller = new StonePiller(1004, Material.rock).setUnlocalizedName("StonePiller").setHardness(10.0F);
     
    
     public static Item Staff = new GodsItem(1004, "GodsMod:Staff").setUnlocalizedName("Staff").setCreativeTab(GodsTab);
@@ -38,23 +39,25 @@ public class GodsMod
 	
 	
 	
-	public BiomeGenBase WhiteBiome = new WhiteBiome(40);
+
     
     @Init
     public void load(FMLInitializationEvent event) 
     {
 		//Game Registry
-		GameRegistry.registerBlock(CrackedMossyStone, "CrackedMossyStone");	
-		GameRegistry.registerBlock(WhiteGrass, "White Grass");	
-		GameRegistry.registerBlock(ZeusBlock, "ZeusBlock");	
-		GameRegistry.registerBlock(WhiteDirt, "White Dirt");	
-		GameRegistry.addBiome(WhiteBiome);
+		GameRegistry.registerBlock(CrackedMossyStone);	
+		GameRegistry.registerBlock(WhiteGrass);	
+		GameRegistry.registerBlock(ZeusBlock);	
+		GameRegistry.registerBlock(StonePiller);	
+		GameRegistry.registerBlock(WhiteDirt);	
+
 		
 	
         
         // Language registry
 		LanguageRegistry.addName(CrackedMossyStone, "Cracked Mossy Stone");
 		LanguageRegistry.addName(Staff, "Staff");
+		LanguageRegistry.addName(StonePiller, "Stone Piller");
 		LanguageRegistry.addName(Trident, "Trident");
 		LanguageRegistry.addName(ZeusBlock, "Zeus Block");
 		LanguageRegistry.addName(WhiteGrass, "White Grass");
