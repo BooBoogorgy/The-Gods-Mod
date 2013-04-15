@@ -56,7 +56,8 @@ public class WhiteGrass extends Block
 		                    int var7 = par2 + par5Random.nextInt(3) - 1;
 		                    int var8 = par3 + par5Random.nextInt(5) - 3;
 		                    int var9 = par4 + par5Random.nextInt(3) - 1;
-		                    int var10 = par1World.getBlockId(var7, var8 + 1, var9);
+		                    @SuppressWarnings("unused")
+                            int var10 = par1World.getBlockId(var7, var8 + 1, var9);
 
 		                    if (par1World.getBlockId(var7, var8, var9) == GodsMod.WhiteDirt.blockID && par1World.getBlockLightValue(var7, var8 + 1, var9) >= 4 && par1World.getBlockLightOpacity(var7, var8 + 1, var9) <= 2)
 		                    {
