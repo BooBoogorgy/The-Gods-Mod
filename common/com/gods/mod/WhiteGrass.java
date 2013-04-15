@@ -26,9 +26,9 @@ public class WhiteGrass extends Block
 	    
 	    public void registerIcons(IconRegister par1IconRegister)
 	    {
-	    this.field_Side = par1IconRegister.registerIcon("WhiteGrass_Side");
-	    this.field_Top = par1IconRegister.registerIcon("WhiteGrass_Top");
-	    this.field_Bottom = par1IconRegister.registerIcon("WhiteGrass_Bottom");
+	    this.field_Side = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Side");
+	    this.field_Top = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Top");
+	    this.field_Bottom = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Bottom");
 	    }
 	public WhiteGrass(int i, int j)
 	{
