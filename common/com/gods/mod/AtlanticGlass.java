@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
 
 
-public class ZeusBlock extends Block{
+public class AtlanticGlass extends Block{
     
     @SideOnly(Side.CLIENT)
     private Icon field_Side;
@@ -27,19 +27,19 @@ public class ZeusBlock extends Block{
         
         public void registerIcons(IconRegister par1IconRegister)
         {
-        this.field_Side = par1IconRegister.registerIcon("GodsMod:ZeusBlock");
-        this.field_Top = par1IconRegister.registerIcon("GodsMod:ZeusBlock");
-        this.field_Bottom = par1IconRegister.registerIcon("GodsMod:ZeusBlock");
+        this.field_Side = par1IconRegister.registerIcon("GodsMod:AtlanticGlass");
+        this.field_Top = par1IconRegister.registerIcon("GodsMod:AtlanticGlass");
+        this.field_Bottom = par1IconRegister.registerIcon("GodsMod:AtlanticGlass");
         }
         
         
-    public ZeusBlock(int par1, Material par2Material) {
-    super(par1, Material.rock);
+    public AtlanticGlass(int par1, Material par2Material) {
+    super(par1, Material.glass);
     setCreativeTab(GodsMod.GodsTab);
     }
 
 
         public int idDropped(int i, Random random, int j) {
-            return GodsMod.ZeusBlock.blockID;
+            return GodsMod.AtlanticGlass.blockID;
         }
     }

@@ -1,7 +1,5 @@
 package com.gods.mod;
 
-import java.util.Random;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -9,10 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
 
-public class GodDirt extends Block  
-{
-	
-	
+public class GodsWood extends Block{
 	@SideOnly(Side.CLIENT)
     private Icon field_Side;
 	@SideOnly(Side.CLIENT)
@@ -27,20 +22,12 @@ public class GodDirt extends Block
 	    
 	    public void registerIcons(IconRegister par1IconRegister)
 	    {
-	    this.field_Side = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Bottom");
-	    this.field_Top = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Bottom");
-	    this.field_Bottom = par1IconRegister.registerIcon("GodsMod:WhiteGrass_Bottom");
+	    this.field_Side = par1IconRegister.registerIcon("GodsMod:GodsWood_Side");
+	    this.field_Top = par1IconRegister.registerIcon("GodsMod:GodsWood_Top");
+	    this.field_Bottom = par1IconRegister.registerIcon("GodsMod:GodsWood_Top");
 	    }
-	
-    protected GodDirt(int par1, int par2, String par2String)
-    {
-        super(par1, Material.ground);
-		setCreativeTab(GodsMod.GodsTab);
-    }
-		public int idDropped(int i, Random random, int j) {
-			return GodsMod.WhiteDirt.blockID;
-		}
-		public int quantityDropped(Random random){
-		return 1;
-		}
+	public GodsWood(int par1, int par2, Material par3Material) {
+		super(par1, par3Material);
+		this.setCreativeTab(GodsMod.GodsTab);
 	}
+  }
