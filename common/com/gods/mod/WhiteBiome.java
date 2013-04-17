@@ -1,9 +1,6 @@
 package com.gods.mod;
 
 import java.util.Random;
-
-import The_Slayer.WorldGenBlueTree;
-import The_Slayer.WorldGenRedTree;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
@@ -16,6 +13,7 @@ public class WhiteBiome extends BiomeGenBase {
 	this.fillerBlock = (byte) GodsMod.WhiteDirt.blockID;
 	this.maxHeight = 0.1F;
 	this.minHeight = 0;
+	
 	}
 	
 	
